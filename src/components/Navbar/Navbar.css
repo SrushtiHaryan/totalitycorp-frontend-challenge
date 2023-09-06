@@ -1,0 +1,47 @@
+/* Sidebar slide-in animation */
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Sidebar slide-out animation */
+  @keyframes slideOut {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes rotateClose {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(270deg);
+    }
+  }
+  
+  /* Animation properties */
+  .animate-slideIn {
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  .animate-slideOut {
+    animation: slideOut 0.5s ease-in-out;
+  }
+
+  .animate-rotate{
+    animation: rotateClose 10s ease-in;
+  }
+
+  .navCloseBtn{
+    /* animation: rotateClose 1.2s ease-in ; */
+    animation: rotateClose 1.7s ease-out;
+  }
+  
