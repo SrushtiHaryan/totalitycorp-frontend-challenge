@@ -1,0 +1,122 @@
+[
+    {
+        "product_id": "1",
+        "product_name": "Men's Casual Shirt",
+        "category": "Men",
+        "price": 799.99,
+        "rating": 4.5,
+        "image_url": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1664545731_1046077.jpg?format=webp&w=640&dpr=1.5"
+    },
+    {
+        "product_id": "2",
+        "product_name": "Women's Floral Dress",
+        "category": "Women",
+        "price": 649.99,
+        "rating": 4.2,
+        "image_url": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1689581016_8052572.jpg?format=webp&w=240&dpr=1.5"
+    },
+    {
+        "product_id": "3",
+        "product_name": "Men's Running Shoes",
+        "category": "Men",
+        "price": 299.99,
+        "rating": 4.0,
+        "image_url": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1685204728_4765946.jpg?format=webp&w=360&dpr=1.5"
+    },
+    {
+        "product_id": "4",
+        "product_name": "Women's Winter Sweater",
+        "category": "Women",
+        "price": 999.99,
+        "rating": 3.8,
+        "image_url": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1665043412_4052269.jpg?format=webp&w=360&dpr=1.5"
+    },
+    {
+        "product_id": "5",
+        "product_name": "Men's Jeans",
+        "category": "Men",
+        "price": 549.99,
+        "rating": 3.4,
+        "image_url": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1686392407_7974723.jpg?format=webp&w=360&dpr=1.5"
+    },
+    {
+        "product_id": "6",
+        "product_name": "Women's Bagpack",
+        "category": "Women",
+        "price": 399.99,
+        "rating": 4.6,
+        "image_url": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1581718557_HarryPotter_Snitched_02.jpg?format=webp&w=360&dpr=1.5"
+    },
+    {
+        "product_id": "7",
+        "product_name": "Men's Holiday Shirt",
+        "category": "Men",
+        "price": 1499.99,
+        "rating": 4.7,
+        "image_url": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1651763326_1113400.jpg?format=webp&w=240&dpr=1.5"
+    },
+    {
+        "product_id": "8",
+        "product_name": "Women's Summer Dress",
+        "category": "Women",
+        "price": 799.99,
+        "rating": 3.3,
+        "image_url": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1693311947_5751495.jpg?format=webp&w=240&dpr=1.5"
+    },
+    {
+        "product_id": "9",
+        "product_name": "Men's Sports T-shirt",
+        "category": "Men",
+        "price": 349.99,
+        "rating": 4.2,
+        "image_url": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1692774818_7698617.jpg?format=webp&w=360&dpr=1.5"
+    },
+    {
+        "product_id": "10",
+        "product_name": "Women's Tank Top",
+        "category": "Women",
+        "price": 899.99,
+        "rating": 4.5,
+        "image_url": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1652971793_1877368.jpg?format=webp&w=240&dpr=1.5"
+    },
+    {
+        "product_id": "11",
+        "product_name": "Men's Shirt",
+        "category": "Men",
+        "price": 1999.99,
+        "rating": 4.8,
+        "image_url": "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Top-selling-tiles5_nuwQYZi.jpg?format=webp&w=300&dpr=1.5"
+    },
+    {
+        "product_id": "12",
+        "product_name": "Women's Denim Jacket",
+        "category": "Women",
+        "price": 1099.99,
+        "rating": 4.6,
+        "image_url": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1642582383_2007140.jpg?format=webp&w=360&dpr=1.5"
+    },
+    {
+        "product_id": "13",
+        "product_name": "Men's Sneakers",
+        "category": "Men",
+        "price": 449.99,
+        "rating": 4.4,
+        "image_url": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1690956240_7929012.jpg?format=webp&w=240&dpr=1.5"
+    },
+    {
+        "product_id": "14",
+        "product_name": "Women's Yoga Pants",
+        "category": "Women",
+        "price": 299.99,
+        "rating": 2.6,
+        "image_url": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1665128104_4304204.jpg?format=webp&w=360&dpr=1.5"
+    },
+    {
+        "product_id": "15",
+        "product_name": "Men's Hoodie",
+        "category": "Men",
+        "price": 599.99,
+        "rating": 4.3,
+        "image_url": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1677658769_4896311.jpg?format=webp&w=240&dpr=1.5"
+    }
+]

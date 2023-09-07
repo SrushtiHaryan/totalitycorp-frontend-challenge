@@ -1,12 +1,15 @@
 import { React, useState } from 'react';
 import './Navbar.css';
+import { useCart } from '../../context/Context';
+import {Link} from 'react-router-dom';
 
-import { FaBars, FaUser, FaSignOutAlt, FaClipboardList, FaShoppingCart, FaClose } from 'react-icons/fa';
+import { FaBars, FaUser, FaSignOutAlt, FaClipboardList, FaShoppingCart, FaClose , FaShoppingBag } from 'react-icons/fa';
 import { GrClose } from 'react-icons/gr';
 
 
 const Navbar = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
+    const { cartItemCount } = useCart();
 
     const toggleSidebar = () => {
         setSidebarOpen(!sidebarOpen);
@@ -22,8 +25,12 @@ const Navbar = () => {
                     <h1 className="text-white text-xl font-semibold">Urban Elegance</h1>
                 </div>
 
+
                 {!sidebarOpen && (
                 <div className="flex items-center space-x-4">
+                <Link to="/cart">
+                <div className="text-white z-30 flex flex-row items-center justtify-center">Cart ({cartItemCount})</div>
+                </Link>
                     <img
                         src="assets/profile_picture.jpg" // Replace with your profile image URL
                         alt="Profile"
@@ -54,14 +61,22 @@ const Navbar = () => {
                             <FaUser className="mr-4" />
                             <span>Your Profile</span>
                         </li>
+                        <Link to="/cart">
                         <li className="px-16 py-6 hover:bg-gray-100 flex items-center justify-start">
                             <FaShoppingCart className="mr-4" />
-                            <span>Your Cart</span>
+                            <span>Your Cart  ({cartItemCount})</span>
                         </li>
+                        </Link>
                         <li className="px-16 py-6 hover:bg-gray-100 flex items-center justify-start">
                             <FaClipboardList className="mr-4" />
                             <span>Your Orders</span>
                         </li>
+                        <Link to="/">
+                        <li className="px-16 py-6 hover:bg-gray-100 flex items-center justify-start">
+                            <FaShoppingBag className="mr-4" />
+                            <span>Products</span>
+                        </li>
+                        </Link>
                     </ul>
                     <button className="navCloseBtn">
                         <GrClose  onClick={toggleSidebar}/>

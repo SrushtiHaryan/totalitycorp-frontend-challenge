@@ -5,38 +5,21 @@ import { FaTrash } from 'react-icons/fa'
 import ProductCard from '../../components/ProductCard/ProductCard';
 import ParticlesBg from "particles-bg";
 import { CartItem } from '../../components/CartItem/CartItem';
+import { useCart } from '../../context/Context';
+import { Link } from 'react-router-dom';
 
 
 const CartPage = () => {
+  const { cartItemsMap, cartItemCount, addItemToCart, cartIdItemMap, calculateTotal } = useCart();
 
 
 
-  const [cartItems, setCartItems] = useState([
-    {
-      id: 1,
-      name: 'Product 1',
-      price: 50.0,
-      quantity: 2,
-      image: 'product-1.jpg',
-    },
-    // Add more items to the cart as needed
-  ]);
+  const [cartItems, setCartItems] = useState(cartItemsMap);
 
-  const calculateTotal = () => {
-    return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
-  };
+  // Calculate the total of all cart items
 
-  const increaseQuantity = (itemId) => {
-    // Implement logic to increase the quantity of an item in the cart
-  };
 
-  const decreaseQuantity = (itemId) => {
-    // Implement logic to decrease the quantity of an item in the cart
-  };
-
-  const removeItem = (itemId) => {
-    // Implement logic to remove an item from the cart
-  };
+  
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -63,30 +46,32 @@ const CartPage = () => {
       </div>
 
       <div className="w-3/4 flex flex-col items-center gap-2 z-10">
-      {windowWidth > 450 ? (<div className="flex flex-row justify-between">
-        <h2 className="text-2xl font-semibold p-4 m-10 mt-20 white text-white border-2 shadow-md bg-black">Shopping Cart Total:</h2>
-        <h2 className="text-2xl font-semibold p-4 m-10 mt-20 text-white ">$ 50000</h2>
+        {windowWidth > 450 ? (<div className="flex flex-row justify-between">
+          <h2 className="text-2xl font-semibold p-4 m-10 mt-20 white text-white border-2 shadow-md bg-black">Shopping Cart Total:</h2>
+          <h2 className="text-2xl font-semibold p-4 m-10 mt-20 text-white ">₹ {calculateTotal().toFixed(2)}</h2>
 
-        </div>):
-        (<div className="flex flex-col gap-0">
-        <h2 className="text-2xl font-semibold p-4  mt-20 white text-white border-2 shadow-md bg-black">Shopping Cart Total:</h2>
-        <h2 className="text-2xl font-semibold p-4  text-white ">$ 50000</h2>
+        </div>) :
+          (<div className="flex flex-col gap-0">
+            <h2 className="text-2xl font-semibold p-4  mt-20 white text-white border-2 shadow-md bg-black">Shopping Cart Total:</h2>
+            <h2 className="text-2xl font-semibold p-4  text-white ">₹{calculateTotal().toFixed(2)}</h2>
 
-        </div>) }
-       
+          </div>)}
 
-        <CartItem />
-        <CartItem />
-        <CartItem />
-        <CartItem />
-        <CartItem />
-        <CartItem />
-        <CartItem />
-        <CartItem />
-        <CartItem />
+        {Object.keys(cartItemsMap).length === 0 ? (
+          <p className="text-4xl text-white z-20 p-10 mt-12">Your cart is empty</p>
+        ) : (
+          Object.keys(cartItemsMap).map((itemId) => (
+            <CartItem key={itemId} id={itemId} count={cartItemsMap[itemId]} name={cartIdItemMap[itemId].name} image_url={cartIdItemMap[itemId].image_url}/>
+          ))
+        )}
 
-        <h2 className="text-2xl font-semibold p-4 m-10 white text-white border-2 shadow-md">Checkout</h2>
 
+
+        {/* <CartItem name={"Asdfghjkl"} count={1} /> */}
+
+        <Link to="/checkout">
+          <h2 className="text-2xl font-semibold p-4 mt-40 mb-40 white text-white border-2 shadow-md">Checkout</h2>
+        </Link>
 
 
 
