@@ -1,5 +1,16 @@
 ---
-# E-commerce Website
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Challenge Overview](#challenge-overviw)
+- [Challenge Details](#challenge-details)
+- [Tech Stack](#tech-stack)
+- [Usage](#usage)
+- [Approach](#approach)
+- [Future Enhancements](#future-enhancements)
+
+# Project Overview: Urban Elgance - an E-commerce Website 
 
 This e-commerce website project was developed as part of the TotalityCorp Frontend Challenge. It is an intermediate-level e-commerce site **Urban Elegance** built using [React](https://reactjs.org/) and [Tailwind CSS](https://tailwindcss.com/).
 
@@ -90,7 +101,9 @@ I am genuinely grateful for the opportunity to work on this project and look for
 further developing and enhancing it to fulfill its potential.
 
 🚀 I am enthusiastic and eager to continue working on this project, addressing any remaining aspects 
-and exploring new opportunities for improvement.## Future Enchancements
+and exploring new opportunities for improvement.
+
+## Future Enchancements
 
 - User Authentication: I plan to implement user registration and login functionalities, allowing users to have personalized accounts and save their shopping preferences.
 - Payment Integration: Integrating a secure payment gateway is a top priority with the help of Stripe payment gateway.
