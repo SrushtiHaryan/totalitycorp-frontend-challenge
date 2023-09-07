@@ -40,10 +40,11 @@ const CartPage = () => {
 
   return (
     <div className="flex justify-center bg-black">
-      <div className="bubbles">
+    {windowWidth > 450 ? (<div className="bubbles">
 
-        <ParticlesBg color="#ffffff" className="particle-container fixed " type="cobweb" bg={true} />
-      </div>
+<ParticlesBg color="#ffffff" className="particle-container fixed " type="cobweb" bg={true} />
+</div>): (<div></div>)}
+      
 
       <div className="w-3/4 flex flex-col items-center gap-2 z-10">
         {windowWidth > 450 ? (<div className="flex flex-row justify-between">
