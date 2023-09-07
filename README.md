@@ -1,6 +1,15 @@
 ---
+## Table of Contents
 
-# Project Overview: Urban Elgance - an E-commerce Website
+- [Project Overview](#project-overview)
+- [Challenge Overview](#challenge-overview)
+- [Challenge Details](#challenge-details)
+- [Tech Stack](#tech-stack)
+- [Usage](#usage)
+- [Approach](#approach)
+- [Future Enhancements](#future-enhancements)
+
+# Project Overview: Urban Elegance - an E-commerce Website
 
 This e-commerce website project was developed as part of the TotalityCorp Frontend Challenge. It is an intermediate-level e-commerce site **Urban Elegance** built using [React](https://reactjs.org/) and [Tailwind CSS](https://tailwindcss.com/).
 
