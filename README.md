@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+---
+# E-commerce Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This e-commerce website project was developed as part of the TotalityCorp Frontend Challenge. It is an intermediate-level e-commerce site **Urban Elegance** built using [React](https://reactjs.org/) and [Tailwind CSS](https://tailwindcss.com/).
 
-## Available Scripts
+## Challenge Overview
 
-In the project directory, you can run:
+Develop an intermediate-level e-commerce website using React or a similar frontend framework/library. The website replicates a shopping site with essential features, including product listing, cart management, and checkout. This challenge combines coding, UI design, logical thinking, user interaction, and critical problem-solving.
 
-### `npm start`
+## Challenge Details
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Product Listing
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Display a variety of products with images, names, prices, and "Add to Cart" buttons.
+- Implement filters to allow users to sort products by category, price range, or ratings.
 
-### `npm test`
+### Shopping Cart
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Implement a cart section to display the added products, quantities, and total cost.
+- Allow users to increase, decrease, or remove items from the cart.
+- Display real-time updates of the cart total and item count.
 
-### `npm run build`
+### Checkout
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Implement a checkout process that calculates the total cost of items in the cart.
+- Allow users to enter shipping information and payment details.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Responsive Design
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Ensure the website is responsive and works seamlessly on both desktop and mobile devices.
+- Optimize the layout for different screen sizes.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Frontend Framework**: React
+- **UI Framework**: Tailwind CSS
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Hosting**: Deployed on [Vercel](https://vercel.com/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Structure
 
-## Learn More
+- `/src`: Contains the React application source code.
+- `/public`: Contains static assets - images and the HTML template.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository:
 
-### Code Splitting
+   ```bash
+   git clone https://github.com/SrushtiHaryan/totalitycorp-frontend-challenge.git
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Install dependencies:
 
-### Analyzing the Bundle Size
+   ```bash
+   cd totalitycorp-frontend-challenge
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. Run the development server:
 
-### Making a Progressive Web App
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. Open your browser and navigate to `http://localhost:3000` to view the website.
 
-### Advanced Configuration
+## Approach
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Approach
+I began this project with a "mobile-first" approach, prioritizing the design and functionality for smaller screens, which later scaled up seamlessly to larger devices. This decision proved to be effective in ensuring a responsive user experience.
 
-### Deployment
+The development process kicked off with the creation of the website's core components. I started with the navbar, followed by the sidebar, product listing, cart, and checkout pages. Each component was designed and implemented step by step to ensure a smooth user flow.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+One of the key milestones in this project was the implementation of filtering options. I allowed users to filter products by category, price range, and ratings.. This phase challenged me to use conditional rendering effectively, which I had never implemented before but just read about it.
 
-### `npm run build` fails to minify
+Cart management presented another exciting challenge. To allow users to interact with their cart items, I needed a way to pass data from child to parent components. This led me to explore and implement the Context API, which proved to be an excellent tool for managing and sharing state across the application. I added features like item increment, decrement, and real-time total cost updates, enhancing the user experience.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+As I continued to refine the project, I also focused on improving the UI to create an appealing and user-friendly shopping environment.
+
+Throughout this journey, I learnt a lot of things in a short time frame. I am genuinely grateful for the opportunity to work on this project and look forward to further developing and enhancing it to fulfill its potential.
+
+I am enthusiastic and eager to continue working on this project, addressing any remaining aspects and exploring new opportunities for improvement.
+
+## Future Enchancements
+
+-User Authentication: I plan to implement user registration and login functionalities, allowing users to have personalized accounts and save their shopping preferences.
+-Payment Integration: Integrating a secure payment gateway is a top priority with the help of Stripe payment gateway.
+-Getting more product details: Clicking on the product card must open that product's page to know more about it
+-Order History: Developing an order history feature will allow users to track their previous purchases and easily reorder items.
+-Product Recommendations: Implementing product recommendation algorithms based on user browsing and purchase history can boost cross-selling and upselling opportunities.
+-Backend Development: While this project focuses on the frontend, I look forward to building a robust backend to support features like inventory management and order processing.
+-Automated Testing: Implementing comprehensive test suites to ensure the reliability and stability of the application, especially as new features are added (Selenium Automation).
+
+## Acknowledgments
+
+Special thanks to TotalityCorp for providing this challenging opportunity to showcase frontend development skills.
+
+---
+
