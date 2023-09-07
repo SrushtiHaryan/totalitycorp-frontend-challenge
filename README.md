@@ -4,14 +4,6 @@
 
 This e-commerce website project was developed as part of the TotalityCorp Frontend Challenge. It is an intermediate-level e-commerce site **Urban Elegance** built using [React](https://reactjs.org/) and [Tailwind CSS](https://tailwindcss.com/).
 
-<div style="display: flex; justify-content: space-between;">
-    <img src="https://github.com/SrushtiHaryan/totalitycorp-frontend-challenge/assets/74239252/7f47ca88-445f-40ce-92bd-7ebe5bf4721c" alt="Product Page" width="200"/>
-    <img src="https://github.com/SrushtiHaryan/totalitycorp-frontend-challenge/assets/74239252/f242b1ef-273b-4c2e-a43a-4f0b5a1c5614" alt="Sidebar" width="200"/>
-    <img src="https://github.com/SrushtiHaryan/totalitycorp-frontend-challenge/assets/74239252/2f01b7dd-60e1-478c-9e11-05f5db4209ce" alt="Cart" width="200"/>
-    <img src="https://github.com/SrushtiHaryan/totalitycorp-frontend-challenge/assets/74239252/3fb477c0-c435-478a-b817-842ca8b42e98" alt="Checkout" width="200"/>
-</div>
-
-
 ## Challenge Overview
 
 Develop an intermediate-level e-commerce website using React or a similar frontend framework/library. The website replicates a shopping site with essential features, including product listing, cart management, and checkout. This challenge combines coding, UI design, logical thinking, user interaction, and critical problem-solving.
