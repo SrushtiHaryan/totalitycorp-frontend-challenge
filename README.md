@@ -3,7 +3,7 @@
 ## Table of Contents
 
 - [Project Overview](#project-overview)
-- [Challenge Overview](#challenge-overviw)
+- [Challenge Overview](#challenge-overview)
 - [Challenge Details](#challenge-details)
 - [Tech Stack](#tech-stack)
 - [Usage](#usage)
